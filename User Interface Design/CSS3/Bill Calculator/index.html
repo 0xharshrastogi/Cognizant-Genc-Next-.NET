@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <link rel="stylesheet" href="billcalc.css" type="text/css" />
+    <title>Bill</title>
+
+    <script type="text/javascript">
+      function calculateTotalPrice() {
+        const price = document.getElementById("price").value;
+        const qty = document.getElementById("qty").value;
+        const totalPrice = price * qty;
+        document.getElementById("totalprice").innerHTML = totalPrice;
+
+        return false;
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Bill Calculator</h1>
+    <form id="billCalc" onsubmit="return calculateTotalPrice()">
+      <table border="0">
+        <tr>
+          <td><label for="productName">Product Name</label></td>
+          <td>
+            <input
+              required=""
+              type="text"
+              name="productName"
+              id="productName"
+              placeholder="Product Name"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="price">Product Price In Rs.</label></td>
+          <td>
+            <input
+              required
+              type="number"
+              name="price"
+              id="price"
+              placeholder="Product Price"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="qty">Quantity</label></td>
+          <td>
+            <input
+              required
+              type="number"
+              name="qty"
+              id="qty"
+              placeholder="Enter Quantity"
+              min="1"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="totalprice">Total Price In Rs.</label></td>
+          <td><output id="totalprice" for="price qty"></output></td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <input type="submit" name="submit" id="submit" value="Submit" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

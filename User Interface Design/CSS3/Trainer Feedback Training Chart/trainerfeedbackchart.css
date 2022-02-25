@@ -1,0 +1,52 @@
+h1 {
+  text-align: center;
+  color: #ff00ff;
+  font-style: italic;
+}
+
+table {
+  text-align: left;
+  margin-left: 35%;
+  background-color: #f0f0f0;
+}
+
+td {
+  text-align: center;
+}
+
+caption {
+  text-align: left;
+  font-weight: bold;
+}
+
+.tr1 {
+  background-color: #ff0080;
+}
+
+.tr2 {
+  background-color: #48f9fb;
+}
+
+.theader {
+  background-color: #800000;
+  color: #ffffff;
+}
+
+#ex1,
+#vg1 {
+  background-color: #00ff00;
+}
+
+#go1 {
+  background-color: #ffff00;
+}
+
+#av1 {
+  background-color: #d3d3d3;
+  color: #fff;
+}
+
+#ba1 {
+  background-color: #ff0000;
+  color: #fff;
+}

@@ -1,0 +1,42 @@
+body {
+  background-color: #00ffff;
+  font-family: Arial;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+dd {
+  font-size: 1.5em;
+}
+
+p[title] {
+  color: #ff0000;
+  font-size: 1.7em;
+  line-height: 1.5;
+}
+
+.reasons {
+  color: #ff0f70;
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: 1.5em;
+}
+
+#description01,
+#description07 {
+  font-style: italic;
+  color: #f500ff;
+}
+
+#description07 {
+  color: #ff4500;
+  font-weight: bold;
+}
+
+em {
+  color: #ff0000;
+  font-weight: bold;
+}
