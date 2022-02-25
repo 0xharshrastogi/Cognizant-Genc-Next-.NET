@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Feedback form</h2>
+      <form action="#" class="form-group" onsubmit="return false">
+        <div>
+          <label for="customerName">Customer Name:</label>
+          <input placeholder="Enter your name" type="text" class="form-control" name="customerName" id="customerName" />
+        </div>
+        <div>
+          <label for="mobileNumber">Mobile Number:</label>
+          <input placeholder="Enter your mobile number" type="text" name="mobileNumber" id="mobileNumber" class="form-control" />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input placeholder="Enter email" type="email" name="email" id="email" class="form-control" />
+        </div>
+
+        <div class="form-check">
+          <label for="gender">Gender:</label>
+
+          <input type="radio" id="male" class="form-check-input" value="male" name="gender" />
+          <label class="form-check-label"> Male </label>
+
+          <input type="radio" id="female" class="form-check-input" value="female" name="gender" />
+          <label class="form-check-label">Female </label>
+        </div>
+        <div>
+          <label for="remarks">Remarks:</label>
+          <textarea class="form-control" placeholder="Enter your remarks" name="Remarks" id="Remarks" rows="8" cols="40"></textarea>
+        </div>
+        <div>
+          <input type="checkbox" id="subscribe" class="form-check-input" />
+          <label> Accept to subscribe for newsletters through email</label>
+        </div>
+
+        <div>
+          <input type="submit" class="btn btn-lg btn-success" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
