@@ -1,0 +1,5 @@
+SELECT USERS.user_id, count(*) AS no_of_times
+FROM USERS, BOOKINGDETAILS
+WHERE USERS.user_id=BOOKINGDETAILS.user_id
+GROUP BY USERS.user_id
+ORDER BY USERS.user_id;
