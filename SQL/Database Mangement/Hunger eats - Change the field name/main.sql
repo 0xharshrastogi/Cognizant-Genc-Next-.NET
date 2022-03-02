@@ -1,2 +1,2 @@
 ALTER TABLE hotel_details
-RENAME COLUMN rating hotel_rating;
+CHANGE COLUMN Rating Hotel_Rating INT;
