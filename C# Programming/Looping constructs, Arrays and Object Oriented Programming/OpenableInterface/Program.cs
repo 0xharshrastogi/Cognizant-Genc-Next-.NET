@@ -1,20 +1,16 @@
-using Internal;
 using System;
 interface IOpenable
 {
   public string OpenSeasame();
 }
-
 class TreasureBox : IOpenable
 {
   public string OpenSeasame() => "Congratulations , Here is your lucky win";
 }
-
 class Parachute : IOpenable
 {
   public string OpenSeasame() => "Have a thrilling experience flying in air";
 }
-
 class Program
 {
   public static void Main(string[] args)
