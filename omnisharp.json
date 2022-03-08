@@ -1,0 +1,9 @@
+{
+  "FormattingOptions": {
+    "useTabs": false,
+    "tabSize": 4,
+    "indentationSize": 4,
+    "smartIndent": 2,
+    "newLine": "\n"
+  }
+}
