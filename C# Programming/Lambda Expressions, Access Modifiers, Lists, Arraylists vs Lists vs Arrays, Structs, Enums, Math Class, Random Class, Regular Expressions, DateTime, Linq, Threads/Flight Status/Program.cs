@@ -25,11 +25,7 @@ namespace DateEx2
             var departure = flightSchedule.GetValueOrDefault(flightNo);
             var timeLeft = departure - DateTime.Now;
 
-            if (timeLeft < new TimeSpan()) return "Flight Already Left";
-
-            return $"Time To Flight {timeLeft}";
+            return timeLeft < new TimeSpan() ? "Flight Already Left" : $"Time To Flight {timeLeft}";
         }
-
-
     }
 }
