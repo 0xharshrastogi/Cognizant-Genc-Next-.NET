@@ -5,7 +5,7 @@ namespace DateEx1
 {
     public class Program
     {
-        public static void Main(string[] args)    //DO NOT CHANGE the 'Main' method signature
+        public static void Main(string[] args)
         {
             Console.WriteLine("Enter the date of birth (dd-mm-yyyy): ");
             var dobText = Console.ReadLine();
