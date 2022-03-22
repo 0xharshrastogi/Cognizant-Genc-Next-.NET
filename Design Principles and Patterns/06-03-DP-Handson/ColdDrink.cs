@@ -24,4 +24,17 @@ namespace BuilderPattern
             return 30.0f;
         }
     }
+
+    public class Pepsi : ColdDrink
+    {
+        public override string Name()
+        {
+            return "Pepsi";
+        }
+
+        public override float Price()
+        {
+            return 29.0f;
+        }
+    }
 }

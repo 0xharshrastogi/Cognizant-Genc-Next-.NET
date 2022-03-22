@@ -37,4 +37,17 @@ namespace BuilderPattern
             return 30f;
         }
     }
+
+    public class ChickenBurger : NonVegBurger
+    {
+
+        public override string Name()
+        {
+            return "Chicken Burger";
+        }
+        public override float Price()
+        {
+            return base.Price() + 5f;
+        }
+    }
 }

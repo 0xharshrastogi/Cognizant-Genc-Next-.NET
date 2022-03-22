@@ -10,6 +10,14 @@ namespace BuilderPattern
             Console.WriteLine("Veg Meal");
             meal.Show();
             Console.WriteLine($"Total Cost: {meal.Cost}");
+
+            var nonVegMeal = mealBuild.PrepareNonVegMeal();
+
+            Console.WriteLine("Veg Meal");
+            nonVegMeal.Show();
+            Console.WriteLine($"Total Cost: {nonVegMeal.Cost}");
+
+
         }
     }
 }
