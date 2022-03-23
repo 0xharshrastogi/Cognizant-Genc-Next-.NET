@@ -1,0 +1,6 @@
+/home/harsh/Videos/SOLID_Principles/SOLID_Principles/bin/Debug/net6.0/publish/SOLID_Principles
+/home/harsh/Videos/SOLID_Principles/SOLID_Principles/bin/Debug/net6.0/publish/SOLID_Principles.dll
+/home/harsh/Videos/SOLID_Principles/SOLID_Principles/bin/Debug/net6.0/publish/SOLID_Principles.deps.json
+/home/harsh/Videos/SOLID_Principles/SOLID_Principles/bin/Debug/net6.0/publish/SOLID_Principles.runtimeconfig.json
+/home/harsh/Videos/SOLID_Principles/SOLID_Principles/bin/Debug/net6.0/publish/SOLID_Principles.dll.config
+/home/harsh/Videos/SOLID_Principles/SOLID_Principles/bin/Debug/net6.0/publish/SOLID_Principles.pdb
