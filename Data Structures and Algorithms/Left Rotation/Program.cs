@@ -16,14 +16,16 @@ class Result
 {
     public static List<int> rotateLeft(int d, List<int> arr)
     {
-        var length = arr.Count;
+        d = d > arr.Count ? d % arr.Count : d;
 
-        for (var i = 0; i < lenght; i++)
-            arr[(i + length - d) % length] = arr[i];
+        var temp = new int[d];
+
+        for (int i = 0; i < d; i++) temp[i] = arr[i];
+        for (int i = d; i < arr.Count; i++) arr[i - d] = arr[i];
+        for (int i = 0; i < d; i++) arr[arr.Count - d + i] = temp[i];
 
         return arr;
     }
-
 }
 
 class Solution
