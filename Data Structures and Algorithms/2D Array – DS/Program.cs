@@ -36,7 +36,7 @@ class Result
                 max = sum > max ? sum : max;
             }
 
-        return max;
+        return (int)max;
     }
 
 }
