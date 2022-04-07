@@ -7,7 +7,7 @@ FROM
   Department D
 WHERE
     E.workdept=D.deptno
-GROUP BY
+GROUP BY 
     deptname
 HAVING 
       COUNT(workdept) > 1
