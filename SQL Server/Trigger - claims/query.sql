@@ -34,20 +34,3 @@ GO
 SELECT SUM(amount_of_claim)
 FROM claims
 GROUP BY id
-
--- CREATE trigger claim_audits
--- ON claims
--- AFTER INSERT
--- AS
--- BEGIN
---   INSERT INTO claim_audit
---     (customer_name, amount_of_claim, [action])
---   SELECT C.first_name, I.amount_of_claim, 'Updated customer claimed amount'
---   FROM Inserted I
---     INNER JOIN Customer_Policy CP ON CP.id = I.customer_policy_id
---     INNER JOIN Customer C ON C.id = CP.customer_id
-
---   SELECT customer_name, amount_of_claim, 'Updated customer claimed amount'
---   FROM claim_audit;
--- END
--- GO
