@@ -13,7 +13,7 @@ namespace StudentManagement
             var s = new Student();
 
             Console.WriteLine("Enter Student Id");
-            s.StudentID = int.Parse(Console.ReadLine());
+            s.StudentId = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Enter Student Name");
             s.StudentName = Console.ReadLine();

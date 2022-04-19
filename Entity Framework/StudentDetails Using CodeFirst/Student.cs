@@ -8,7 +8,7 @@ namespace StudentManagement
 {
     public class Student
     {
-        public int StudentID { get; set; }
+        public int StudentId { get; set; }
         public string StudentName { get; set; }
         public DateTime EnrolledDate { get; set; }
         public string Department { get; set; }
