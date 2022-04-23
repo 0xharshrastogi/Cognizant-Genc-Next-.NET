@@ -1,0 +1,9 @@
+@model ASP_App1.Models.Department
+
+<h2>Available Courses</h2>
+
+@foreach (var coursename in @Model.CourseList)
+{
+  @coursename
+  <br />
+}
