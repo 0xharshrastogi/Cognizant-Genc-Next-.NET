@@ -1,0 +1,51 @@
+@using (Html.BeginForm())
+{
+  <table>
+  <tr>
+    <th>@Html.Partial("_HeaderNavBar")</th>
+  </tr>
+  <tr>
+    <th>
+      <section style="margin:50px;">
+        <table>
+          <tr>
+            <td>@Html.Label("Name")</td>
+            <td>@Html.TextBox("txName")</td>
+          </tr>
+          <tr>
+            <td>@Html.Label("Phone Number")</td>
+            <td>@Html.TextBox("txPhoneNumber")</td>
+          </tr>
+          <tr>
+            <td>@Html.Label("Donation For")</td>
+            <td>@Html.DropDownList("ddlDonation", new List<SelectListItem>()
+              {
+              new SelectListItem() {Text="Education",Value="Education" },
+              new SelectListItem() {Text="Hospital",Value="Hospital" },
+              new SelectListItem() {Text="Old People Caring Home",Value="Old People Caring Home" }
+              })</td>
+          </tr>
+          <tr>
+            <td>@Html.Label("Amount")</td>
+            <td>@Html.TextBox("txAmount")</td>
+          </tr>
+          <tr>
+            <td>@Html.Label("Donation Type")</td>
+            <td>
+              @Html.RadioButton("rbDonationType", "One Time Donation", isChecked: true)One Time Donation
+              @Html.RadioButton("rbDonationType", "Recurring Donation")@Html.Label("Recurring Donation")
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button type="submit" id="submit">PROCEED</button></td>
+          </tr>
+        </table>
+      </section>
+    </th>
+  </tr>
+  <tr>
+    <th>@Html.Partial("_FooterNavBar")</th>
+  </tr>
+</table>
+}
