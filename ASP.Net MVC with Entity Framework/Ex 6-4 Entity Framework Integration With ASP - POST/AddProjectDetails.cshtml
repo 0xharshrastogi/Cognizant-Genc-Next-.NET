@@ -1,0 +1,11 @@
+@model ASP_EF_App1.Models.Project
+
+@using (Html.BeginForm("ProjectDetail", "Project", FormMethod.Post))
+{
+  @Html.LabelFor(m=>m.ProjectName) @Html.TextBoxFor(m=>m.ProjectName)
+  @Html.LabelFor(m=>m.Platform) @Html.TextBoxFor(m=>m.Platform)
+  @Html.LabelFor(m=>m.Client) @Html.TextBoxFor(m=>m.Client)
+  @Html.LabelFor(m=>m.Duration) @Html.TextBoxFor(m=>m.Duration)
+
+  <button id="submit" type="submit">Submit</button>
+}
