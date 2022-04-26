@@ -1,0 +1,33 @@
+@model ASP_App1.Models.Registration
+
+<h1><u>One Stop Service</u></h1>
+
+<form action="POST">
+  <label for="CName">Customer Name</label>
+  <input type="text" id="CName" asp-for=@Model.CustomerName>
+  <br>
+
+  <label for="Pno">Phone Number</label>
+  <input type="number" id="Pno" asp-for=@Model.PhoneNumber>
+  <br>
+
+  <label for="Vno">Vehical Number</label>
+  <input type="text" id="Vno" asp-for=@Model.VehicleNo>
+  <br>
+
+  <label for="city">City</label>
+  <input type="text" id="city" asp-for=@Model.City>
+  <br>
+
+  <label for="VModel">Vehical Model</label>
+  <input type="text" id="VModel" asp-for=@Model.VehicleModel>
+  <br>
+
+  <label for="SType">Service Type</label>
+  <input type="radio" name="Stype" id="Stype" value="Regular"> Regular
+  <input type="radio" name="Stype" id="Stype" value="Other"> Others
+  <br>
+
+  <button type="submit">Submit</button>
+  <button type="reset">Reset</button>
+</form>
