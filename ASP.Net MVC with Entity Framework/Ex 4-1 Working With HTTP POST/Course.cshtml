@@ -1,0 +1,23 @@
+@model ASP_App1.Models.Course
+
+<h1>Enter New Course Details</h1>
+
+<form action="post">
+  <label>Course Name</label>
+  <input type="text" asp-for=@Model.CourseName>
+  <br>
+
+  <label>Course Id</label>
+  <input type="text" asp-for=@Model.CourseId>
+  <br>
+
+  <label>Duration</label>
+  <input type="number" asp-for=@Model.Duration>
+  <br>
+
+  <label>Duration</label>
+  <input type="text" asp-for=@Model.Level>
+  <br>
+
+  <button type="submit">Submit</button>
+</form>
