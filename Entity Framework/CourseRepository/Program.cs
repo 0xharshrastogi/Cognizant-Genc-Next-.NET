@@ -8,6 +8,7 @@ namespace Exercise1
 {
     public class Program
     {
-        static void Main(string[] args) { }
+        static void Main(string[] args)
+        { }
     }
 }

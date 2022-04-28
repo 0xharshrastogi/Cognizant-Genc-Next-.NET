@@ -8,8 +8,10 @@ namespace Exercise1
 {
     public class CourseContext : DbContext
     {
-        public DbSet<Course> Courses { get; set; }
+        public virtual DbSet<Course> Courses { get; set; }
 
-        public CourseContext() : base("name=CourseConnectionString") { }
+        public CourseContext()
+            : base("name=CourseConnectionString")
+        { }
     }
 }
