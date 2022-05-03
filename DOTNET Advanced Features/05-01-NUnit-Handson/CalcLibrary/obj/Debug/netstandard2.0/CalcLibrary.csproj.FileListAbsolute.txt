@@ -1,0 +1,10 @@
+/home/harsh/Downloads/NUnit code reference/CalcLibrary/CalcLibrary/bin/Debug/netstandard2.0/CalcLibrary.deps.json
+/home/harsh/Downloads/NUnit code reference/CalcLibrary/CalcLibrary/bin/Debug/netstandard2.0/CalcLibrary.dll
+/home/harsh/Downloads/NUnit code reference/CalcLibrary/CalcLibrary/bin/Debug/netstandard2.0/CalcLibrary.pdb
+/home/harsh/Downloads/NUnit code reference/CalcLibrary/CalcLibrary/obj/Debug/netstandard2.0/CalcLibrary.csproj.AssemblyReference.cache
+/home/harsh/Downloads/NUnit code reference/CalcLibrary/CalcLibrary/obj/Debug/netstandard2.0/CalcLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/home/harsh/Downloads/NUnit code reference/CalcLibrary/CalcLibrary/obj/Debug/netstandard2.0/CalcLibrary.AssemblyInfoInputs.cache
+/home/harsh/Downloads/NUnit code reference/CalcLibrary/CalcLibrary/obj/Debug/netstandard2.0/CalcLibrary.AssemblyInfo.cs
+/home/harsh/Downloads/NUnit code reference/CalcLibrary/CalcLibrary/obj/Debug/netstandard2.0/CalcLibrary.csproj.CoreCompileInputs.cache
+/home/harsh/Downloads/NUnit code reference/CalcLibrary/CalcLibrary/obj/Debug/netstandard2.0/CalcLibrary.dll
+/home/harsh/Downloads/NUnit code reference/CalcLibrary/CalcLibrary/obj/Debug/netstandard2.0/CalcLibrary.pdb
