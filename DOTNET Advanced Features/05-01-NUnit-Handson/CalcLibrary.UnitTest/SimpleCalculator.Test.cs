@@ -45,29 +45,33 @@ public class SimpleCalculatorTest
 
     [Test]
     [TestCase(12, 0, null)]
-    [TestCase(0, 0, null)]
+    [TestCase(-10, 0, null)]
     [TestCase(-10, 10, -1)]
     [TestCase(-1000, -10, 100)]
     public void Division_With_CorrectResult(double valA, double valB, double expected)
     {
-        if (valB == 0)
-            Assert.Throws<ArgumentException>(() => throw new ArgumentException());
-        else
+        try
+        {
+            calculator!.Division(valA, valB);
             Assert.AreEqual(calculator!.Division(valA, valB), expected);
+        }
+        catch (ArgumentException)
+        {
+            Assert.Fail("Division by zero");
+        }
     }
 
     [Test]
-    [TestCase(12, 0)]
-    [TestCase(0, 0)]
-    [TestCase(-10, 10)]
-    [TestCase(-1000, -10)]
-    public void Test_AllClear_Behaviour(double valA, double valB)
+    [TestCase(12, 0, 12)]
+    [TestCase(0, 0, 0)]
+    [TestCase(-10, 10, 0)]
+    [TestCase(-1000, -10, -1010)]
+    public void TestAddAndClear(double valA, double valB, double expected)
     {
-        var expected = 0d;
-        calculator!.Addition(valA, valB);
-        calculator.AllClear();
+        Assert.AreEqual(calculator!.Addition(valA, valB), expected);
 
-        Assert.That(calculator.GetResult == expected);
+        calculator.AllClear();
+        Assert.AreEqual(calculator.GetResult, 0);
     }
 
 }
