@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountsManagerLib", "AccountsManagerLib\AccountsManagerLib.csproj", "{69F6B8E8-3E32-4E32-AC3F-D92781775C30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountsManagerLib.UnitTest", "AccountsManagerLib.UnitTest\AccountsManagerLib.UnitTest.csproj", "{CC99729E-FDDC-4DC9-BE28-4E6ED1D16666}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69F6B8E8-3E32-4E32-AC3F-D92781775C30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69F6B8E8-3E32-4E32-AC3F-D92781775C30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69F6B8E8-3E32-4E32-AC3F-D92781775C30}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{69F6B8E8-3E32-4E32-AC3F-D92781775C30}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{CC99729E-FDDC-4DC9-BE28-4E6ED1D16666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC99729E-FDDC-4DC9-BE28-4E6ED1D16666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC99729E-FDDC-4DC9-BE28-4E6ED1D16666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC99729E-FDDC-4DC9-BE28-4E6ED1D16666}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
