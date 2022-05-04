@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FourSeasonLib.UnitTest", "FourSeasonLib.UnitTest\FourSeasonLib.UnitTest.csproj", "{C72A3F64-9008-461A-9786-721524937892}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeasonsLib", "FourSeasonsLib\SeasonsLib.csproj", "{61F53A84-0CC2-466E-A701-6CDC0DDC9993}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C72A3F64-9008-461A-9786-721524937892}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C72A3F64-9008-461A-9786-721524937892}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C72A3F64-9008-461A-9786-721524937892}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C72A3F64-9008-461A-9786-721524937892}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61F53A84-0CC2-466E-A701-6CDC0DDC9993}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61F53A84-0CC2-466E-A701-6CDC0DDC9993}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61F53A84-0CC2-466E-A701-6CDC0DDC9993}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{61F53A84-0CC2-466E-A701-6CDC0DDC9993}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+EndGlobal
