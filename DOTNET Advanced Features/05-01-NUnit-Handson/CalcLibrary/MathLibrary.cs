@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CalcLibrary
+﻿namespace CalcLibrary
 {
     interface IMathLibrary
     {
@@ -46,7 +44,7 @@ namespace CalcLibrary
 
         public double GetResult
         {
-            get { return result; }            
+            get { return result; }
         }
     }
 }
