@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/harsh/workspace/Genc-Next-.NET/Dotnet Advanced Features/Code Analysis/03-01-C#4.5-Handson/App/App.csproj": {}
+  },
+  "projects": {
+    "/home/harsh/workspace/Genc-Next-.NET/Dotnet Advanced Features/Code Analysis/03-01-C#4.5-Handson/App/App.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/harsh/workspace/Genc-Next-.NET/Dotnet Advanced Features/Code Analysis/03-01-C#4.5-Handson/App/App.csproj",
+        "projectName": "App",
+        "projectPath": "/home/harsh/workspace/Genc-Next-.NET/Dotnet Advanced Features/Code Analysis/03-01-C#4.5-Handson/App/App.csproj",
+        "packagesPath": "/home/harsh/.nuget/packages/",
+        "outputPath": "/home/harsh/workspace/Genc-Next-.NET/Dotnet Advanced Features/Code Analysis/03-01-C#4.5-Handson/App/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/harsh/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
