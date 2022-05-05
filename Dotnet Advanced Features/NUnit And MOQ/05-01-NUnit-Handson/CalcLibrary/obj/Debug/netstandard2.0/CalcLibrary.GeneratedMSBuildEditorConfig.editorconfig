@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = CalcLibrary
+build_property.ProjectDir = /home/harsh/workspace/Genc-Next-.NET/Dotnet Advanced Features/NUnit And MOQ/05-01-NUnit-Handson/CalcLibrary/
