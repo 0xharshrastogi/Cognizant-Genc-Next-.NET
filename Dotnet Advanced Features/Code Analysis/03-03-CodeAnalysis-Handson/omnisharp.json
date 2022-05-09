@@ -1,0 +1,11 @@
+{
+  "RoslynExtensionsOptions": {},
+
+  "Plugins": {},
+
+  "FormattingOptions": {
+    "NewLine": "\n",
+    "IndentBlock": true,
+    "EnableEditorConfigSupport": true
+  }
+}
