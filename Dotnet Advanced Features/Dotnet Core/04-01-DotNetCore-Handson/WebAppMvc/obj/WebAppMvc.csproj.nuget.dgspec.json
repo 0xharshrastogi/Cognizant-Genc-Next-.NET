@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/harsh/workspace/Genc-Next-.NET/Dotnet Advanced Features/Dotnet Core/04-01-DotNetCore-Handson/WebAppMvc/WebAppMvc.csproj": {}
+  },
+  "projects": {
+    "/home/harsh/workspace/Genc-Next-.NET/Dotnet Advanced Features/Dotnet Core/04-01-DotNetCore-Handson/WebAppMvc/WebAppMvc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/harsh/workspace/Genc-Next-.NET/Dotnet Advanced Features/Dotnet Core/04-01-DotNetCore-Handson/WebAppMvc/WebAppMvc.csproj",
+        "projectName": "WebAppMvc",
+        "projectPath": "/home/harsh/workspace/Genc-Next-.NET/Dotnet Advanced Features/Dotnet Core/04-01-DotNetCore-Handson/WebAppMvc/WebAppMvc.csproj",
+        "packagesPath": "/home/harsh/.nuget/packages/",
+        "outputPath": "/home/harsh/workspace/Genc-Next-.NET/Dotnet Advanced Features/Dotnet Core/04-01-DotNetCore-Handson/WebAppMvc/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/harsh/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

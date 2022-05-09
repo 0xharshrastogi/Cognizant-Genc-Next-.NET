@@ -1,0 +1,15 @@
+@model IEnumerable<string>
+
+<h1 class="display-6">List of organizations</h1>
+
+<ul>
+  @foreach (var organization in Model)
+  {
+    if (organization == "Amazon")
+    {
+      <li><strong>@organization</strong></li>
+      continue;
+    }
+    <li>@organization</li>
+  }
+</ul>

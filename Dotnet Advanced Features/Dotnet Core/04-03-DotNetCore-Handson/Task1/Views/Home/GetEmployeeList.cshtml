@@ -1,0 +1,17 @@
+@model IEnumerable<Employee>
+
+<div class="row">
+  @foreach (var employee in Model)
+  {
+    <div class="col-3">
+      <div>ID: @employee.ID</div>
+      <div>Name: @employee.Name</div>
+      <div>Salary: @employee.Permanent</div>
+      @{
+        var color = employee.Permanent ? "green " : "red";
+        var style = string.Format(null, "color: {0}", color);
+      }
+      <div>Is Permanent: <span style="@style">@employee.Permanent</span></div>
+    </div>
+  }
+</div>

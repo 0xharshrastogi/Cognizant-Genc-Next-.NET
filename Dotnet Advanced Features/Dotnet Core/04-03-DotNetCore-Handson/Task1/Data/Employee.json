@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "name": "John",
+    "salary": 10000,
+    "permanent": true
+  },
+  {
+    "id": "2",
+    "name": "Smith",
+    "salary": 5000,
+    "permanent": false
+  },
+  {
+    "id": "3",
+    "name": "Mark",
+    "salary": 5000,
+    "permanent": false
+  },
+  {
+    "id": "4",
+    "name": "Mary",
+    "salary": 5000,
+    "permanent": true
+  }
+]
