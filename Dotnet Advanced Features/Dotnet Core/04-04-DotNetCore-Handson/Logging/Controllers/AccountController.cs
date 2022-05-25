@@ -7,7 +7,7 @@ namespace Logging.Controllers
     {
         private ILogger Logger { get; }
 
-        public AccountController(ILogger logger)
+        public AccountController(ILogger<AccountController> logger)
         {
             Logger = logger;
         }
