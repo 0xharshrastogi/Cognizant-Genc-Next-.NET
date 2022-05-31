@@ -1,0 +1,22 @@
+h4{
+    margin-bottom: 0%;
+}
+
+form{
+    border: 1px solid rgb(235, 19, 19);
+    padding:2px;
+    width: 20%;
+    display: inline-block;
+}
+
+.block {
+    float:right;
+    width:30%;
+    border: 1px dotted rgb(73, 50, 205);
+}
+
+.error
+{
+    color: rgb(21, 255, 0);
+    font-size: 14px;
+}

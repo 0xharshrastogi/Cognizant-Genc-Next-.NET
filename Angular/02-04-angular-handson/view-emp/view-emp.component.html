@@ -1,0 +1,22 @@
+<h1>Employee Details</h1>
+
+<div *ngFor="let item of employee_list">
+  <h3>Angular learning <a>View Employee</a><a>Edit Employee</a></h3>
+  <b>ID:&nbsp;</b><span>{{ item.id }}</span
+  ><br /><br />
+  <b>Name:&nbsp;</b><span>{{ item.name }}</span
+  ><br /><br />
+  <b>Salary:&nbsp;</b><span>{{ item.salary | currency: "INR" }}</span
+  ><br /><br />
+  <b>Permanent:&nbsp;</b><span>{{ item.permanent }}</span
+  ><br /><br />
+  <b>Department Id:&nbsp;</b><span>{{ item.department.id }}</span
+  ><br /><br />
+  <b>Department Name:&nbsp;</b><span>{{ item.department.name }}</span
+  ><br /><br />
+  <b>Skills</b><br />
+  <ul>
+    <li *ngFor="let sk of item.skill">{{ sk.name }}</li>
+  </ul>
+  <b>Date of Birth:&nbsp;</b><span>{{ item.dateOfBirth | date: "dd MMM yyyy" }}</span>
+</div>

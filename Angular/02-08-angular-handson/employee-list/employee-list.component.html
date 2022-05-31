@@ -1,0 +1,7 @@
+<h2><b>Employees List</b></h2>
+
+<label for="search_bar" style="font-size: 18px;font-weight: 600;">Search&nbsp;</label>
+<input type="search" placeholder="Find by name" id="search_bar" [(ngModel)]="searchKey" (keyup)="search()"><br><br>
+
+<app-employee-info *ngFor="let employee of filteredEmployees" [emp]="employee"></app-employee-info>
+

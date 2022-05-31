@@ -1,0 +1,30 @@
+.error_msg
+{
+    color: red;
+    font-size: 15px;
+}
+
+form
+{
+    border: 1px solid maroon;
+    padding:2px;
+    width: 20%;
+    display: inline-block;
+}
+
+.error
+{
+    color: red;
+    font-size: 14px;
+}
+
+.block {
+    float:right;
+    width:30%;
+    border: 1px dotted limegreen;
+}
+
+h4
+{
+    margin-bottom: 0%;
+}

@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Buy Courses</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            .ng-valid
+            {
+                border:2px solid green;
+            }
+            .ng-invalid
+            {
+                border:2px solid red;
+            }
+        </style>
+    </head>
+   <body>
+       <div class="container">
+            <form>
+                <label>Course ID:</label>
+                <input type="text" id="id" name="id" class="form-control" required [(ngModel)]="obj.id" #id="ngModel"><br><Br>
+                <div [hidden]="id.valid || id.pristine" style="color:red;font-weight: bold;">
+                    <b>*Id is required</b>
+                </div>
+                <div [hidden]="id.invalid || id.dirty" style="color:green;font-weight: bold;">
+                    <b>*Id is valid</b>
+                </div>
+                <label>Course Name:</label>
+                <input type="text" id="name" name="name" class="form-control" required [(ngModel)]="obj.name" #name="ngModel"><br><Br>
+                <div [hidden]="name.valid || name.pristine" style="color:red;font-weight: bold;">
+                    <b>*Name is required</b>
+                </div>
+                <div [hidden]="name.invalid || name.dirty" style="color:green;font-weight: bold;">
+                    <b>*Name is valid</b>
+                </div>
+                <label>Course Price:</label>
+                <input type="text" id="price" name="price" class="form-control" required [(ngModel)]="obj.price" #price="ngModel"><br><Br>
+                <div [hidden]="price.valid || price.pristine" style="color:red;font-weight: bold;">
+                    <b>*Price is required</b>
+                </div>
+                <div [hidden]="price.invalid || price.dirty" style="color:green;font-weight: bold;">
+                    <b>*Price is valid</b>
+                </div>
+                <label>Course Description:</label>
+                <input type="text" id="desc" name="desc" class="form-control" required [(ngModel)]="obj.desc" #desc="ngModel"><br><Br>
+                <div [hidden]="desc.valid || desc.pristine" style="color:red;font-weight: bold;">
+                    <b>*Description is required</b>
+                </div>
+                <div [hidden]="desc.invalid || desc.dirty" style="color:green;font-weight: bold;">
+                    <b>*Description is valid</b>
+                </div>
+                <input type="submit" value="submit" id="submit">
+            </form>
+       </div>
+   </body>
+</html>

@@ -1,0 +1,15 @@
+<p>Simple button click event!!</p>
+
+<button type="button" id="btn_click" (click)="click()">Click Me</button>
+<p>{{ result }}</p>
+
+<div>
+  <input type="text" [(ngModel)]="value" />
+  <button type="button" (click)="inc()">Add</button>
+</div>
+
+<div style="margin-top: 15px">
+  <button type="button" (click)="minus()" [disabled]="flag">-</button>
+  <input type="number" [(ngModel)]="quantity" />
+  <button type="button" (click)="plus()">+</button>
+</div>

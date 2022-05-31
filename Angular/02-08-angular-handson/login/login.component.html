@@ -1,0 +1,20 @@
+<form #loginform="ngForm" (ngSubmit)="login(loginform.value)">
+    <fieldset>
+        <legend style="color: darkgoldenrod;">LOGIN DETAILS:</legend>
+
+        <label for="u_name" style="font-size: 20px;"><i class="fa fa-user-circle" aria-hidden="true"></i>UserName&nbsp;</label><br>
+        <input type="text" id="u_name" name="user_name" minlength="4" maxlength="20" [(ngModel)]="username" #user_name="ngModel" required>
+        <div class="error" *ngIf="user_name.errors?.minlength">Username should be atleast 4 characters.</div>
+        <div class="error"  *ngIf="user_name.touched && user_name.invalid">Username is required.</div>
+        <br><br>
+        
+        <label for="u_pswd" style="font-size: 20px;"><i class="fa fa-key" aria-hidden="true"></i>PassWord&nbsp;</label><br>
+        <input type="password" id="u_pswd" name="pass_word" minlength="4" maxlength="20" [(ngModel)]="password" #pass_word="ngModel" required>
+        <div class="error" *ngIf="pass_word.errors?.minlength">Password should be atleast 4 characters.</div>
+        <div class="error"  *ngIf="pass_word.touched && pass_word.invalid">Password is required.</div>
+        <br><br>
+
+        <button type="submit" [disabled]="loginform.invalid">LOGIN</button> 
+    </fieldset>
+    <div class="error" *ngIf="invalid">{{invalid}}</div>
+</form>

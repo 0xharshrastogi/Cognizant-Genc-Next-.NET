@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Courses Component</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+          li
+          {
+            color:white;
+            font-weight: bold;
+            padding:5px;
+          }
+          
+        </style>
+      </head>
+  <body>
+    <nav class="navbar navbar-fixed navbar-inverse">
+      <ul class="nav navbar-nav">
+        <li><a routerLink="/view-courses" >Courses</a></li>
+        <li><a routerLink="/view-books" >Books</a></li>
+        <li><a routerLink="/buy-courses" >Buy Courses</a></li>
+        <li><a routerLink="/buy-books" >Buy Books</a></li>
+      </ul>
+    </nav>
+    
+    <router-outlet></router-outlet>
+  </body>
+  </html>
+  

@@ -1,0 +1,36 @@
+<script>
+  var employee = {
+    firstName: "john",
+    lastName: "Stokes",
+    salary: 5000,
+    permanent: true,
+  };
+
+  console.log(employee);
+
+  var employee1 = '{"firstName":"John","lastName":"Stokes","salary":5000,"permanent":true}';
+  e1 = JSON.parse(employee1);
+  console.log(e1);
+
+  var department = {
+    department_id: 3,
+    department_name: "payroll",
+  };
+
+  var skill = [
+    { id: 1, name: "HTML" },
+    { id: 2, name: "CSS" },
+    { id: 3, name: "JAVASCRIPT" },
+  ];
+
+  var e2 = {
+    firstName: "john",
+    lastName: "Stokes",
+    salary: 5000,
+    permanent: true,
+    dept: department,
+    skill: skill,
+  };
+
+  console.log(JSON.stringify(e1));
+</script>

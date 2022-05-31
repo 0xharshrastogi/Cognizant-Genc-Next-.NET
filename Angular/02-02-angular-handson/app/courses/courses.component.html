@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Courses Component</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+</html>
+<h2>List of Courses</h2>
+<ul class="list-group">
+    <li (click)="onClick(c1)" *ngFor="let c1 of c" class="list-group-item"><span class="label label-primary">{{c1.id}}</span> {{c1.name}}</li>
+</ul>
+
+<div *ngIf="selectedCourse" class="container">
+    <h2>{{selectedCourse.name | uppercase}} Details</h2>
+    <table class="table table-bordered">
+        <tr>
+            <th>Course ID</th>
+            <th>Course Name</th>
+            <th>Course Price</th>
+            <th>Course Description</th>
+        </tr>
+        <tr>
+            <td>{{selectedCourse.id}}</td>
+            <td>{{selectedCourse.name}}</td>
+            <td>{{selectedCourse.price}}</td>
+            <td>{{selectedCourse.desc}}</td>
+        </tr>
+    </table>
+</div>
+

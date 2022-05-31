@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      var employee = { firstName: (string = "john"), lastName: (string = "Stokes"), salary: (number = 5000), permanent: (boolean = true) };
+      console.log(employee);
+      var employee1 = '{"firstName":"John","lastName":"Stokes","salary":5000,"permanent":true}';
+      e1 = JSON.parse(employee1);
+      console.log(e1);
+      var department = { department_id: (number = 3), department_name: (string = "payroll") };
+      var skill = [
+        { id: 1, name: "HTML" },
+        { id: 2, name: "CSS" },
+        { id: 3, name: "JAVASCRIPT" },
+      ];
+      var e2 = { firstName: (string = "john"), lastName: (string = "Stokes"), salary: (number = 5000), permanent: (boolean = true), dept: department, skill: skill };
+
+      console.log("firstName:" + e2.firstName);
+      console.log("lastName:" + e2.lastName);
+      console.log("salary:" + e2.salary);
+      console.log("permanent:" + e2.permanent);
+      console.log("department id " + e2.dept.department_id);
+      console.log("department name " + e2.dept.department_name);
+      console.log("skill[0]: " + e2.skill[0].id + "," + e2.skill[0].name);
+      console.log("skill[1]: " + e2.skill[1].id + "," + e2.skill[1].name);
+      console.log("skill[2]: " + e2.skill[2].id + "," + e2.skill[2].name);
+    </script>
+    <meta charset="utf-8" />
+    <title>Handson1</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <app-root></app-root>
+  </body>
+</html>

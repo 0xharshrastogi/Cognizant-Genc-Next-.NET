@@ -1,0 +1,59 @@
+<h2>Edit Employee</h2>
+<form [formGroup]="edit_emp" (ngSubmit)="onSubmit(edit_emp.value)">
+  <div>
+    <label for="emp_name"><b>Name</b></label
+    ><br />
+    <input type="name" formControlName="name" id="emp_name" />
+    <div class="error" *ngIf="edit_emp.controls['name'].errors?.minlength">Minimum length of name is 4.</div>
+    <div class="error" *ngIf="edit_emp.controls['name'].errors?.maxlength">Maximum length of name is 20.</div>
+    <div class="error" *ngIf="edit_emp.controls['name'].invalid && edit_emp.controls['name'].touched">Enter valid name.</div>
+    <br /><br />
+  </div>
+
+  <div>
+    <label for="emp_salary"><b>Salary</b></label
+    ><br />
+    <input type="number" formControlName="salary" id="emp_salary" />
+    <div class="error" *ngIf="edit_emp.controls['salary'].errors?.min">Minimum salary should be 5000/-</div>
+    <div class="error" *ngIf="edit_emp.controls['salary'].errors?.max">Maximum salary should be 50000/-</div>
+    <div class="error" *ngIf="edit_emp.controls['salary'].invalid && edit_emp.controls['salary'].touched">Enter valid salary.</div>
+    <br /><br />
+  </div>
+
+  <div>
+    <b>Is Permanent or not?</b><br />
+    <input type="radio" formControlName="permanent" id="emp_true" [value]="true" />
+    <label for="emp_true">Yes</label>
+    <input type="radio" formControlName="permanent" id="emp_false" [value]="false" />
+    <label for="emp_false">No</label>
+    <div class="error" *ngIf="edit_emp.controls['permanent'].invalid && edit_emp.controls['permanent'].touched">Permanent field is required.</div>
+    <br /><br />
+  </div>
+
+  <div>
+    <h4>Department</h4>
+    <select formControlName="department">
+      <option *ngFor="let department of departments" [ngValue]="department" [selected]="department.id === employee.department.id">{{ department.name }}</option>
+    </select>
+    <br /><br />
+  </div>
+
+  <div>
+    <h4>Additional Skills</h4>
+
+    <div *ngFor="let item of skills; let i = index"><input [value]="skills[i].name" type="checkbox" (change)="onCheckBoxChange($event)" />{{ skills[i].name }}</div>
+    <br />
+  </div>
+
+  <button type="submit" [disabled]="!edit_emp.valid">SAVE</button>
+</form>
+
+<div class="block">
+  <strong>Employee Model</strong><br />
+  <pre>{{ employee | json }}</pre>
+</div>
+
+<div class="block" style="margin-right: 50px">
+  <strong>Angular Generated Form Model</strong><br />
+  <pre>{{ edit_emp.value | json }}</pre>
+</div>

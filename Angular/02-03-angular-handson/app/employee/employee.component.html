@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title>Employee Information</title>
+  </head>
+    <body>
+        <h2>Sample Layout</h2>
+        <table>
+        <h4>Employee Details</h4>
+        <p>ID: {{employee.id}}</p>
+        <p>Name: {{employee.name}}</p>
+        <p>Salary: {{employee.salary}}</p>
+        </table>
+        <br>
+        <table>
+        <p>ID: {{employee.id}}</p>
+        <p>Name: {{employee.name}}</p>
+        <p>Salary: {{employee.salary}}</p>
+        <p *ngIf="employee.permanent">Permanent: Yes</p>
+
+        <p> Department Id: {{employee.dept.department_id}}</p>
+        <p> Department Name: {{employee.dept.department_name}}</p>
+        
+        </table>
+        <br>
+        <table>
+            <p>ID: {{employee.id}}</p>
+            <p>Name: {{employee.name}}</p>
+            <p>Salary: {{employee.salary | currency:'INR'}}</p>
+            <p *ngIf="employee.permanent">Permanent: Yes</p>
+    
+            <p> Department Id: {{employee.dept.department_id}}</p>
+            <p> Department Name: {{employee.dept.department_name}}</p>
+            Skills
+            <table *ngFor="let s of skill">
+              
+                    <tr>
+                        <th>Skill Id</th>
+                        <th>Skill Name</th>
+                      </tr>
+                      <tr>
+                        <td>{{employee.skill[0].id}}</td>
+                        <td>{{employee.skill[0].name}}</td>
+                      </tr>
+                      <tr>
+                        <td>{{employee.skill[1].id}}</td>
+                        <td>{{employee.skill[1].name}}</td>
+                      </tr>
+                      <tr>
+                        <td>{{employee.skill[2].id}}</td>
+                        <td>{{employee.skill[2].name}}</td>
+                      </tr>
+                </table>
+        <p>Date of Birth: {{employee.dateOfbirth}}</p>
+        
+        <p>Date of Birth: {{employee.dateOfbirth | date}}</p>
+        </table>
+        <h1>{{title}}</h1>
+        <table>
+          <h2>Name: {{employee.name}}</h2>
+          <h2>Salary: {{employee.salary | currency:'INR'}}</h2>
+          <h2>Date of Joining: {{employee.joiningDate | date:'fullDate'}}</h2>
+          </table>
+    </body>
+</html>

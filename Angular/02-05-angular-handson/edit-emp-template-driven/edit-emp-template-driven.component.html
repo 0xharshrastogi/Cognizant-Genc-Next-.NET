@@ -1,0 +1,63 @@
+<h2>Edit Employee</h2>
+
+<form #empForm="ngForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="inp1"><b>Name</b></label
+    ><br />
+    <input type="text" id="inp1" name="name" [(ngModel)]="employee.name" minlength="2" maxlength="10" #name="ngModel" required />
+    <div class="error" *ngIf="name.errors?.minlength">Name should be atleast 2 characters.</div>
+    <div class="error" *ngIf="name.touched == true && name.invalid == true">Name is required.</div>
+    <br /><br />
+  </div>
+
+  <div>
+    <label for="inp2"><b>Salary</b></label
+    ><br />
+    <input type="number" id="inp2" name="salary" [(ngModel)]="employee.salary" min="5000" max="50000" #salary="ngModel" required />
+    <div class="error" *ngIf="salary.errors?.min">Minimum salary should be 5000/-</div>
+    <div class="error" *ngIf="salary.errors?.max">Maximum salary should be 50000/-</div>
+    <div class="error" *ngIf="salary.touched == true && salary.invalid == true">Salary is required</div>
+    <br /><br />
+  </div>
+
+  <div>
+    <b>Is Permanent or Not?</b>
+    <br />
+    <input type="radio" id="permanentTrue" name="permanent" [(ngModel)]="employee.permanent" #permanent="ngModel" [value]="true" required />
+    <label for="permanentTrue">Yes</label>
+    <input type="radio" id="permanentFalse" name="permanent" [(ngModel)]="employee.permanent" #permanent="ngModel" [value]="false" required />
+    <label for="permanentFalse">No</label>
+    <div class="error" *ngIf="permanent.touched == true && permanent.invalid == true">Permanent field is required.</div>
+    <br /><br />
+  </div>
+
+  <div>
+    <h4>Department</h4>
+    <select [(ngModel)]="employee.department.id" name="Department" required>
+      <option *ngFor="let department of departments" [ngValue]="department.id" [selected]="employee.department.id == department.id">{{ department.name }}</option>
+    </select>
+    <br /><br />
+  </div>
+
+  <button type="submit" [disabled]="!empForm.valid">Save</button>
+</form>
+
+<div class="block">
+  <strong>Employee Model</strong><br />
+  <pre>{{ employee | json }}</pre>
+</div>
+
+<div class="block" style="margin-right: 50px">
+  <strong>Angular Generated Form Model</strong><br />
+  <pre>{{ empForm.value | json }}</pre>
+</div>
+
+<div>
+  <ul>
+    <li>name.invalid - {{ name.invalid }}</li>
+    <li>name.touched - {{ name.touched }}</li>
+    <li>name.dirty - {{ name.dirty }}</li>
+    <li>name.errors.required - {{ name.errors?.required }}</li>
+    <li>name.errors.minlength - {{ name.errors?.minlength | json }}</li>
+  </ul>
+</div>

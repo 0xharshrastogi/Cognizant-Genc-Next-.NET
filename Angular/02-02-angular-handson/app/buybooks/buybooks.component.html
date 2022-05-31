@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Buy Courses</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <label>Book ID:</label><input type="text" id="id" class="form-control" [formControl]="id"><br><br>
+                <label>Book Name:</label><input type="text" id="name"  class="form-control" [formControl]="name"><br><br>
+                <label>Book Price:</label><input type="text" id="price"  class="form-control" [formControl]="price"><br><br>
+                <label>Book Description:</label><input type="text" id="desc"  class="form-control" [formControl]="desc"><br><br>
+                <input type="submit" name="submit" value="submit"/>
+            </form>
+        </div>
+        
+    </body>
+</html>
